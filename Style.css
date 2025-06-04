@@ -1,0 +1,88 @@
+nav ul {
+    list-style-type: none; /* Remove os marcadores (bolinhas) da lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Deixa os itens um ao lado do outro */
+    gap: 20px; /* Espaçamento entre os itens (opcional) */
+    background-color: #333; /* Cor de fundo escura para contraste */
+    padding: 15px; /* Espaçamento interno para melhor visualização */
+}
+
+nav ul li a {
+    color: white; /* Cor do texto branca */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-family: Arial, sans-serif; /* Fonte opcional */
+    font-weight: bold; /* Texto em negrito (opcional) */
+    padding: 10px 50px; /* 10px em cima/baixo, 20px nas laterais */
+}
+
+nav ul li a:hover {
+    color: #ccc; /* Cor ao passar o mouse (opcional) */
+    text-decoration: underline; /* Sublinhado ao passar o mouse (opcional) */
+    margin-right: 40px;
+}
+
+/*Para alteração da imagem*/
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+/*Container da imagem + biografia*/
+.container {
+    display: flex;                /* Ativa o Flexbox */
+    align-items: top;             /* Centraliza verticalmente */
+    gap: 10px;                    /* Espaço entre imagem e texto */
+    max-width: 1920px;            /* Largura máxima do container */
+    margin: left;
+    padding: 10px;                /* Espaçamento interno */
+}
+
+/*classe para imagem configuração da imagem*/
+.imagem {
+    width: 300px;                 /* Largura fixa da imagem */
+    height: auto;                 /* Altura proporcional */
+    border-radius: 8px;           /* Borda arredondada (opcional) */
+    object-fit: cover;            /* Garante que a imagem cubra o espaço */
+}
+
+/*classe para o texto em frente da imagem*/
+.texto {
+    flex: 1;                      /* Ocupa o espaço restante */
+    color: #ffffff;             /* Cor do texto */
+    line-height: 1;               /* Espaçamento entre linhas */
+}
+
+body {
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 80px; /* espaçamento entre as imagens */
+    margin-top: 50px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+    max-width: 300px;
+    height: auto;
+    border: 2px solid white;
+}
+
+.image-caption {
+    margin-top: 10px;
+}
